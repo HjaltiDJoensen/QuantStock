@@ -33,6 +33,24 @@ export const withdrawMoney = (amount) => {
 }
 
 
+export const addCompanyToFavourites = (company) => {
+    return (dispatch) => {
+        dispatch({
+            type: "addToFav",
+            payload: company
+        });
+    }
+}
+export const removeCompanyFromFavourites = (company) => {
+    return (dispatch) => {
+        dispatch({
+            type: "removeFromFav",
+            payload: company
+        });
+    }
+}
+
+
 
 export const loginUser = (username, password) => {
     return (dispatch) => {

@@ -56,6 +56,22 @@ const logReducer = (
 
 
 
+const companyFavouritesReducer = (
+    state = null,
+    action
+) => {
+    switch (action.type) {
+        case "addToFav":
+            return state + action.payload;
+        case "removeFromFav":
+            return state - action.payload
+        default:
+            return state
+    }
+}
+
+
+
 const allReducers = combineReducers({
     counter: counterReducer,
     logged: loggedReducer,
