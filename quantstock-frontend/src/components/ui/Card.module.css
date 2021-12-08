@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300");
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300"); */
 /* color variables */
 /* border radius */
 *, *::before, *::after {
@@ -28,6 +28,10 @@ body {
   text-decoration:none;
   color: black;
 }
+.card_link {
+  text-decoration: none;
+  color: black; 
+}
 .card__img {
   width: 14rem;
   height: 11rem;
@@ -45,17 +49,11 @@ body {
   line-height: 1.2rem;
   height: 6rem;
 }
-/* .card__price {
-  font-size: 1.4rem;
-  margin-top: 0.6rem;
+.card_buttons {
+  flex-direction: row;
+  display: flex;
+  /* border-top: 1px solid #e1e5ee; */
 }
-.card__price::before {
-  content: "$";
-  font-size: 1rem;
-  position: relative;
-  top: -0.3rem;
-  padding-right: 0.1rem;
-} */
 .card__btn {
   border: none;
   border-top: 1px solid #e1e5ee;
@@ -64,10 +62,10 @@ body {
   font-size: 1rem;
   font-weight: bold;
   color: black;
-  width: 100%;
+  width: 50%;
   padding-top: 0.5rem;
   margin-top: 1rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0rem;
   padding-left: 1rem;
   cursor: pointer;
   text-align: left;
@@ -77,6 +75,24 @@ body {
 .card:hover {
   transform: scale(1.02);
 }
+.card__btn2 {
+  border: none;
+  border-top: 1px solid #e1e5ee;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  color: red;
+  width: 50%;
+  padding-top: 0.5rem;
+  margin-top: 1rem;
+  padding-bottom: 0rem;
+  padding-right: 3rem;
+  cursor: pointer;
+  text-align: right;
+  border-radius: 0.2rem;
+  /* transition: background 200ms ease-in, color 200ms ease-in; */
+}
 /* .card__btn:hover {
   color: #0e48fe;
   background: #d50000;
@@ -85,6 +101,9 @@ body {
 .card:hover .card__btn {
   /* background: #d50000; */
   color: #0e48fe;
+}
+.card__btn2:hover {
+  color: black
 }
 @media screen and (min-width: 600px) {
   .wrapper {
@@ -99,16 +118,3 @@ body {
     height: 12rem;
 }
 }
-
-
-
-
-
-
-/* 
-.card {
-  background-color: white;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-  */
